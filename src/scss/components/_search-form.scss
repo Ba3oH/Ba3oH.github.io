@@ -1,0 +1,34 @@
+$namespace: '.search-form';
+
+#{$namespace} {
+  align-items: center;
+  display: flex;
+}
+
+#{$namespace}__input {
+  background-color: $c-primary-dark;
+  border: 0;
+  box-shadow: none;
+  color: $c-secondary-dark;
+  min-width: 370px;
+  padding: 7px;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::placeholder {
+    color: $c-secondary-dark;
+  }
+}
+
+#{$namespace}__button {
+  background-color: transparent;
+  background-image: url("#{$icons-path}/icon-magnifying-glass.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  border: 0;
+  box-shadow: none;
+  padding: 19px;
+}

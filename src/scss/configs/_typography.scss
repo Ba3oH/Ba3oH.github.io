@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'MicrosoftSansSerif';
+  src: url("#{$fonts-path}/MicrosoftSansSerif.eot?#iefix") format('embedded-opentype'),
+       url("#{$fonts-path}/MicrosoftSansSerif.woff") format('woff'),
+       url("#{$fonts-path}/MicrosoftSansSerif.ttf") format('truetype'),
+       url("#{$fonts-path}/MicrosoftSansSerif.svg#MicrosoftSansSerif") format('svg');
+  font-weight: $font-weight-regular;
+  font-style: $font-style-normal;
+}

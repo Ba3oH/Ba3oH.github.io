@@ -1,0 +1,27 @@
+.container-fluid {
+  display: block;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 62px;
+  width: 1500px;
+}
+
+.row {
+  display: flex;
+  margin: 0 (- floor($gap / 2));
+}
+
+.col {
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 0 floor($gap / 2);
+}
+
+.col-x2 {
+  flex-basis: 200%;
+}

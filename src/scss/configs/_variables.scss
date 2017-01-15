@@ -1,0 +1,55 @@
+// Colors
+//-------------------------------
+
+// Default
+$c-black: #000;
+$c-white: #fff;
+$c-grey: #eee;
+$c-red: #a03342;
+$c-yellow: #ffe5bc;
+
+// By use
+$c-primary: $c-red;
+$c-primary-saturated: saturate($c-primary, 10%);
+$c-primary-dark: darken($c-primary, 10%);
+$c-secondary: $c-yellow;
+$c-secondary-dark: mix($c-black, $c-secondary, 5%);
+//-------------------------------
+
+
+// Metrics
+//-------------------------------
+$margin: 16px;
+$padding: 16px;
+//-------------------------------
+
+
+// Grid
+//-------------------------------
+$gap: 36px;
+$gap-big: $gap * 2;
+//-------------------------------
+
+
+// Typography
+//-------------------------------
+
+//Fonts sizes
+$font-size-normal: 16px;
+$font-size-medium: 17px;
+$font-size-big: 19px;
+
+//Fonts weights
+$font-weight-regular: 400;
+
+//Fonts styles:
+$font-style-normal: normal;
+//-------------------------------
+
+
+// Pathes
+//-------------------------------
+$fonts-path: '../fonts';
+$icons-path: '../img/icons';
+$images-path: '../img';
+//-------------------------------

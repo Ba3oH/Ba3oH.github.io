@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'MicrosoftSansSerif', 'Arial', sans-serif;
+  font-size: $font-size-normal;
+  height: 100%;
+}
+
+a {
+  color: $c-primary;
+  text-decoration: none;
+
+  &:hover {
+    color: $c-primary-saturated;
+    text-decoration: underline;
+  }
+}

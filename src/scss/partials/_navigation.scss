@@ -1,0 +1,25 @@
+$namespace: '.navigation';
+
+#{$namespace} {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+#{$namespace}__item {
+
+}
+
+#{$namespace}__link {
+  color: $c-white;
+  display: block;
+  padding: $padding;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: $c-primary-dark;
+    color: $c-secondary-dark;
+    text-decoration: none;
+  }
+}

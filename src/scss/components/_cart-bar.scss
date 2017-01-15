@@ -1,0 +1,41 @@
+$namespace: '.cart-bar';
+
+#{$namespace} {
+  display: flex;
+}
+
+#{$namespace}__left,
+#{$namespace}__right {
+  padding: $padding;
+}
+
+#{$namespace}__left {
+  background-color: $c-primary-dark;
+  color: $c-white;
+}
+
+#{$namespace}__right {
+  align-items: center;
+  background-color: $c-secondary-dark;
+  display: flex;
+}
+
+#{$namespace}__title {
+  background-image: url("#{$icons-path}/icon-cart-secondary.png");
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-left: 35px;
+}
+
+#{$namespace}__toggle-icon {
+  background-image: url("#{$icons-path}/icon-arrow-additional.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 12px;
+  margin-bottom: -5px;
+  margin-left: $margin;
+  transform: rotate(90deg);
+  width: 8px;
+}
