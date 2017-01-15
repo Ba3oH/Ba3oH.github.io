@@ -613,6 +613,14 @@ a:hover {
   padding: 19px;
 }
 
+.main {
+  background-color: #eee;
+}
+
+.main__inner {
+  background-color: #fff;
+}
+
 .header__logo-link {
   background-image: url("../img/logo.png");
   background-position: center;
@@ -711,6 +719,7 @@ a:hover {
 .navigation__link {
   color: #fff;
   display: block;
+  font-size: 17px;
   padding: 16px;
   text-transform: uppercase;
 }
@@ -718,4 +727,16 @@ a:hover {
   background-color: #792732;
   color: #f2dab3;
   text-decoration: none;
+}
+
+.aside {
+  margin-top: 16px;
+}
+
+.aside__head {
+  background-color: #a03342;
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 10px;
+  padding: 16px;
 }

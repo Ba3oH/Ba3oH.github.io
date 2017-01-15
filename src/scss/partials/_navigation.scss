@@ -14,6 +14,7 @@ $namespace: '.navigation';
 #{$namespace}__link {
   color: $c-white;
   display: block;
+  font-size: $font-size-medium;
   padding: $padding;
   text-transform: uppercase;
 

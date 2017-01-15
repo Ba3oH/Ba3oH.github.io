@@ -1,0 +1,9 @@
+$namespace: '.main';
+
+#{$namespace} {
+  background-color: $c-grey;
+}
+
+#{$namespace}__inner {
+  background-color: $c-white;
+}

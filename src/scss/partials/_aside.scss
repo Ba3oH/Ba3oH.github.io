@@ -1,0 +1,13 @@
+$namespace: '.aside';
+
+#{$namespace} {
+  margin-top: $margin;
+}
+
+#{$namespace}__head {
+  background-color: $c-primary;
+  color: $c-white;
+  font-size: $font-size-huge;
+  margin-bottom: 10px;
+  padding: $padding;
+}
