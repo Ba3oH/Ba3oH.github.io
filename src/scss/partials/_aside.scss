@@ -1,7 +1,6 @@
 $namespace: '.aside';
 
 #{$namespace} {
-  margin-top: $margin;
 }
 
 #{$namespace}__head {
@@ -10,4 +9,82 @@ $namespace: '.aside';
   font-size: $font-size-huge;
   margin-bottom: 10px;
   padding: $padding;
+}
+
+#{$namespace}__title {
+  align-items: center;
+  display: flex;
+}
+
+#{$namespace}__icon-burger {
+  margin-right: floor($margin / 2);
+
+  span {
+    background-color: $c-white;
+    display: block;
+    height: 2px;
+    width: 20px;
+
+    &:not(:first-child) {
+      margin-top: 2px;
+    }
+  }
+}
+
+#{$namespace}__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#{$namespace}__list-item {
+
+  & + & {
+    margin-top: 5px;
+  }
+}
+
+#{$namespace}__list-link {
+  align-items: center;
+  background-color: $c-grey-light;
+  color: $c-black;
+  display: flex;
+  padding: floor($padding / 2) $padding;
+
+  &:hover {
+    color: $c-primary;
+    text-decoration: none;
+
+    #{$namespace}__list-arrow {
+      transform: rotate(0);
+    }
+  }
+
+  span {
+
+    &:first-child {
+      flex: 1 1 auto;
+    }
+
+    &:last-child {
+      flex: 0 0 auto;
+    }
+  }
+}
+
+#{$namespace}__list-icon {
+  background-color: $c-primary;
+  padding: 6px;
+}
+
+#{$namespace}__list-arrow {
+  background-image: url("#{$icons-path}/icon-arrow-secondary.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  height: 12px;
+  transform: rotate(90deg);
+  transition: transform .2s;
+  width: 8px;
 }

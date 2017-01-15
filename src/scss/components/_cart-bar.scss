@@ -18,6 +18,7 @@ $namespace: '.cart-bar';
   align-items: center;
   background-color: $c-secondary-dark;
   display: flex;
+  white-space: nowrap;
 }
 
 #{$namespace}__title {

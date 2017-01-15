@@ -6,4 +6,6 @@ $namespace: '.main';
 
 #{$namespace}__inner {
   background-color: $c-white;
+  padding-bottom: $padding * 4;
+  padding-top: $padding * 2;
 }

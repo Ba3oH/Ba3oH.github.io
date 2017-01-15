@@ -70,6 +70,7 @@ $namespace: '.header';
 
 #{$namespace}__navigation {
   align-items: center;
+  background-color: $c-primary;
   display: flex;
   justify-content: space-between;
 }

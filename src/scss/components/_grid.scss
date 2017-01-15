@@ -4,8 +4,8 @@
 
 .container {
   margin: 0 auto;
-  padding: 0 62px;
-  width: 1500px;
+  padding: 0 $gap-big;
+  width: $container-width;
 }
 
 .row {

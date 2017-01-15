@@ -1,0 +1,41 @@
+$namespace: '.marketplace-aside';
+
+#{$namespace} {
+  background-color: $c-grey-light;
+  background-position: 90% 90%;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  border-top: 5px solid $c-primary;
+  flex: 1 1 auto;
+  padding: $padding;
+  position: relative;
+
+  &.v1 {
+    background-image: url("#{$images-path}/bg-item-1.png")
+  }
+
+  &.v2 {
+    background-image: url("#{$images-path}/bg-item-2.png")
+  }
+}
+
+#{$namespace}__list {
+  list-style: none;
+  margin: $margin 0;
+  padding: 0;
+}
+
+#{$namespace}__list-item {
+
+  & + & {
+    margin-top: floor($margin * 1.5);
+  }
+}
+
+#{$namespace}__list-link {
+  color: $c-black;
+
+  &:hover {
+    color: $c-primary;
+  }
+}

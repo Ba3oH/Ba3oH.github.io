@@ -1,0 +1,8 @@
+$namespace: '.banner-item';
+
+#{$namespace} {
+
+  & + & {
+    margin-top: $margin;
+  }
+}

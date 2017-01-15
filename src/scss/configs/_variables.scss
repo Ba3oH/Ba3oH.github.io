@@ -5,12 +5,13 @@
 $c-black: #000;
 $c-white: #fff;
 $c-grey: #eee;
+$c-grey-light: #fafafa;
 $c-red: #a03342;
 $c-yellow: #ffe5bc;
 
 // By use
 $c-primary: $c-red;
-$c-primary-saturated: saturate($c-primary, 10%);
+$c-primary-saturated: saturate($c-primary, 50%);
 $c-primary-dark: darken($c-primary, 10%);
 $c-secondary: $c-yellow;
 $c-secondary-dark: mix($c-black, $c-secondary, 5%);
@@ -28,6 +29,9 @@ $padding: 16px;
 //-------------------------------
 $gap: 36px;
 $gap-big: $gap * 2;
+
+// Container
+$container-width: 1500px;
 //-------------------------------
 
 

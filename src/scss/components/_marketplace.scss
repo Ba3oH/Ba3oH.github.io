@@ -1,0 +1,12 @@
+$namespace: '.marketplace';
+
+#{$namespace} {
+
+}
+
+#{$namespace}__title {
+  border-bottom: 2px solid $c-secondary;
+  color: $c-primary;
+  margin: 0 0 ($margin * 2);
+  padding: 0 0 $padding $padding;
+}

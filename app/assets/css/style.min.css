@@ -471,8 +471,13 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #ab283a;
+  color: #d3001d;
   text-decoration: underline;
+}
+
+img {
+  height: auto;
+  width: 100%;
 }
 
 @font-face {
@@ -487,7 +492,7 @@ a:hover {
 
 .container {
   margin: 0 auto;
-  padding: 0 62px;
+  padding: 0 72px;
   width: 1500px;
 }
 
@@ -545,6 +550,7 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  white-space: nowrap;
 }
 
 .cart-bar__title {
@@ -613,12 +619,106 @@ a:hover {
   padding: 19px;
 }
 
+.banner-item + .banner-item {
+  margin-top: 16px;
+}
+
 .main {
   background-color: #eee;
 }
 
 .main__inner {
   background-color: #fff;
+  padding-bottom: 64px;
+  padding-top: 32px;
+}
+
+.marketplace__title {
+  border-bottom: 2px solid #ffe5bc;
+  color: #a03342;
+  margin: 0 0 32px;
+  padding: 0 0 16px 16px;
+}
+
+.marketplace-aside {
+  background-color: #fafafa;
+  background-position: 90% 90%;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  border-top: 5px solid #a03342;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding: 16px;
+  position: relative;
+}
+.marketplace-aside.v1 {
+  background-image: url("../img/bg-item-1.png");
+}
+.marketplace-aside.v2 {
+  background-image: url("../img/bg-item-2.png");
+}
+
+.marketplace-aside__list {
+  list-style: none;
+  margin: 16px 0;
+  padding: 0;
+}
+
+.marketplace-aside__list-item + .marketplace-aside__list-item {
+  margin-top: 24px;
+}
+
+.marketplace-aside__list-link {
+  color: #000;
+}
+.marketplace-aside__list-link:hover {
+  color: #a03342;
+}
+
+.section {
+  margin-bottom: 32px;
+}
+
+.product {
+  border: 1px solid #f2dab3;
+  font-size: 20px;
+  padding: 16px;
+  text-align: center;
+}
+
+.product__img {
+  height: 300px;
+  margin-bottom: 10px;
+  max-width: 100%;
+  width: auto;
+}
+
+.product__price {
+  color: #d3001d;
+  margin: 0 0 4px;
+}
+
+.product__description {
+  line-height: 1;
+  margin: 0;
+}
+
+.product__button {
+  background-color: #a03342;
+  background-image: url("../img/icons/icon-cart-primary.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  border: 0;
+  border-radius: 3px;
+  box-shadow: none;
+  margin-top: 10px;
+  padding: 22px 24px;
+}
+.product__button:hover {
+  background-color: #d3001d;
+  background-image: url("../img/icons/icon-cart-secondary.png");
 }
 
 .header__logo-link {
@@ -693,6 +793,7 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #a03342;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -729,14 +830,93 @@ a:hover {
   text-decoration: none;
 }
 
-.aside {
-  margin-top: 16px;
-}
-
 .aside__head {
   background-color: #a03342;
   color: #fff;
   font-size: 20px;
   margin-bottom: 10px;
   padding: 16px;
+}
+
+.aside__title {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.aside__icon-burger {
+  margin-right: 8px;
+}
+.aside__icon-burger span {
+  background-color: #fff;
+  display: block;
+  height: 2px;
+  width: 20px;
+}
+.aside__icon-burger span:not(:first-child) {
+  margin-top: 2px;
+}
+
+.aside__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.aside__list-item + .aside__list-item {
+  margin-top: 5px;
+}
+
+.aside__list-link {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fafafa;
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 8px 16px;
+}
+.aside__list-link:hover {
+  color: #a03342;
+  text-decoration: none;
+}
+.aside__list-link:hover .aside__list-arrow {
+  -webkit-transform: rotate(0);
+      -ms-transform: rotate(0);
+          transform: rotate(0);
+}
+.aside__list-link span:first-child {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+.aside__list-link span:last-child {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.aside__list-icon {
+  background-color: #a03342;
+  padding: 6px;
+}
+
+.aside__list-arrow {
+  background-image: url("../img/icons/icon-arrow-secondary.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  height: 12px;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: -webkit-transform .2s;
+          transition: transform .2s;
+  width: 8px;
 }
