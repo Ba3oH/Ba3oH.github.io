@@ -1,0 +1,26 @@
+$namespace: '.footer';
+
+#{$namespace} {
+  display: flex;
+  flex-direction: column;
+}
+
+#{$namespace}__logo-link {
+  background-image: url("#{$images-path}/logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: $c-primary;
+  height: 125px;
+  margin: 12px 0;
+}
+
+#{$namespace}__copyright {
+  background-color: $c-primary;
+}
+
+#{$namespace}__copyright-item {
+  color: $c-white;
+  padding: $padding;
+  text-align: center;
+}
