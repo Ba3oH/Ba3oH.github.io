@@ -11,8 +11,58 @@ $namespace: '.footer';
   background-repeat: no-repeat;
   background-size: contain;
   color: $c-primary;
-  height: 125px;
-  margin: 12px 0;
+  height: 100px;
+  margin: 6px 0 -29px 0;
+}
+
+#{$namespace}__inner {
+  background-color: $c-secondary;
+}
+
+#{$namespace}__block {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+#{$namespace}__social-list {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#{$namespace}__social-item {
+  padding-left: 50px;
+  height: 30px;
+  width: auto;
+}
+
+#{$namespace}__social-item:hover {
+  filter: contrast(2);
+}
+
+#{$namespace}__contacts {
+  display: flex;
+  padding-left: 28px;
+  white-space: nowrap;
+  align-items: center;
+
+  &.with-mobile-icon {
+    background-image: url("#{$icons-path}/icon-mobile.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 35px;
+  }
+
+  &.with-at-icon {
+    background-image: url("#{$icons-path}/icon-at.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 25px;
+  }
 }
 
 #{$namespace}__copyright {
